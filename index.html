@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Paragraph Summarizer</h1>
+        <textarea id="inputText" placeholder="Enter the paragraph you want to summarize"></textarea>
+        <button onclick="summarizeText()">Summarize</button>
+        <div id="summaryContainer">
+            <h2>Summarized Text:</h2>
+            <p id="summaryText"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
